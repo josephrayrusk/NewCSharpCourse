@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace pg72exercise
 {
@@ -6,7 +8,11 @@ namespace pg72exercise
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            const string wontChange = "Hello";
+            var hello = 4;
+
+            Console.WriteLine(wontChange + " " + hello);
+          
         }
     }
 }
