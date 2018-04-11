@@ -19,24 +19,24 @@ namespace pg74exercise
                     throw new ArgumentOutOfRangeException();
 
                 }
-                Console.WriteLine("Have you celebrated your birthday this year? (Type yes or no)");
-                string birthday = Console.ReadLine();
-                int thisyear = 1;
-                if (birthday == "yes")
-                {
-                    thisyear = 0;
-                }
+                //Console.WriteLine("Have you celebrated your birthday this year? (Type yes or no)");
+                //string birthday = Console.ReadLine();
+                //int thisyear = 1;
+                //if (birthday == "yes")
+                //{
+                //    thisyear = 0;
+                //}
        
-                if (birthday == "no")
-                {
-                    thisyear = 1;
-                }
+                //if (birthday == "no")
+                //{
+                //    thisyear = 1;
+                //}
 
-                else if (birthday != "no" || birthday != "yes"){
-                    throw new FormatException();
-                }
+                //else if (birthday != "no" || birthday != "yes"){
+                //    throw new FormatException();
+                //}
 
-                String bornIn = Convert.ToString(DateTime.Now.AddYears(-(age + thisyear)));
+                String bornIn = Convert.ToString(DateTime.Now.AddYears(-(age + 1)));
                 String yearborn = Convert.ToString(DateTime.Parse(bornIn).Year);
                 Console.WriteLine("You were born in " + yearborn);
                 Console.Read();
@@ -50,10 +50,10 @@ namespace pg74exercise
             {
                 Console.WriteLine("Please enter a number greater than 0");
             }
-            catch (FormatException){
-                Console.WriteLine("You must enter yes or no");
+            //catch (FormatException){
+            //    Console.WriteLine("You must enter yes or no");
                 
-            }
+            //}
 
         }
     }
